@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+其实真相就在这个配置文件中。这里就是定义组件的背景图片、
+一级进度背景图片和二级进度背景图片（里面这些id都是系统的id，
+当系统运行到这里时会自动根据这个id去重画组件）    -->
+    <item
+        android:id="@+android:id/background"
+        android:drawable="@drawable/rating_1">
+    </item>
+    <item
+        android:id="@+android:id/secondaryProgress"
+        android:drawable="@drawable/rating_1">
+    </item>
+    <item
+        android:id="@+android:id/progress"
+        android:drawable="@drawable/rating_2">
+    </item>
+
+</layer-list>

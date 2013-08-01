@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ImageSwitcher自己的效果" />
+
+            <ImageSwitcher
+                android:id="@+id/main_component_imageswitcher_switcher1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/main_component_imageswitcher_button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="随机换一张" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ImageSwitcher、Gallery结合使用" />
+
+            <ImageSwitcher
+                android:id="@+id/main_component_imageswitcher_switcher2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" />
+
+            <Gallery
+                android:id="@+id/main_component_imageswitcher_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#55000000"
+                android:gravity="center_vertical"
+                android:spacing="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="只用ImageSwitcher写个图片轮播，最简单的" />
+
+            <ImageSwitcher
+                android:id="@+id/main_component_imageswitcher_switcher3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

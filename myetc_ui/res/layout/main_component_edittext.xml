@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/sample_button0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sample_edit_text0"
+                    android:onClick="show0"
+                    android:text="确定" />
+
+                <EditText
+                    android:id="@+id/sample_edit_text0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="简单的EditText输入框" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/sample_button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sample_edit_text1"
+                    android:onClick="show1"
+                    android:text="确定" />
+
+                <EditText
+                    android:id="@+id/sample_edit_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="文本杠输入说明/暗示" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/sample_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sample_edit_text2"
+                    android:onClick="show2"
+                    android:text="确定" />
+
+                <EditText
+                    android:id="@+id/sample_edit_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890.+-*/%\n()"
+                    android:ems="10"
+                    android:hint="限制输入内容：1234567890.+-*/%\n()" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/sample_button3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sample_edit_text3"
+                    android:onClick="show3"
+                    android:text="确定" />
+
+                <EditText
+                    android:id="@+id/sample_edit_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="限制只能输入数字"
+                    android:phoneNumber="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/sample_button4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sample_edit_text4"
+                    android:onClick="show4"
+                    android:text="确定" />
+
+                <EditText
+                    android:id="@+id/sample_edit_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="任何内容将以”*”符号来显示"
+                    android:password="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/sample_button5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sample_edit_text5"
+                    android:onClick="show5"
+                    android:text="确定" />
+
+                <EditText
+                    android:id="@+id/sample_edit_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="默认字颜色"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ff0000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/sample_button6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sample_edit_text6"
+                    android:onClick="show6"
+                    android:text="确定" />
+
+                <EditText
+                    android:id="@+id/sample_edit_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="禁用输入框" />
+            </RelativeLayout>
+  			<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:hint="输入框无背景/透明"
+                    android:background="@null"
+                    android:textColor="#FFF000" >
+                </EditText>
+
+           <EditText
+               android:layout_width="200px"
+               android:layout_height="wrap_content"
+               android:background="#FF0000"
+               android:focusable="true"
+               android:focusableInTouchMode="true"
+               android:scrollHorizontally="true"
+               android:singleLine="true"
+               android:text="EditText不支持跑马灯/"
+               android:textColor="#FFFFFF"
+               android:textSize="18dip" >
+
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawableBottom="@drawable/icon"
+                    android:text="在图片下方"
+                    android:textColor="#FF0000" >
+                </EditText>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawableTop="@drawable/icon"
+                    android:text="在图片上方"
+                    android:textColor="#FF0000" >
+                </EditText>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/icon"
+                    android:text="在图片左边"
+                    android:textColor="#FF0000" >
+                </EditText>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/icon"
+                    android:text="在图片右边"
+                    android:textColor="#FF0000" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/txtTest0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="特殊按钮-去往"
+                    android:imeOptions="actionGo" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/txtTest1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="特殊按钮-搜索"
+                    android:imeOptions="actionSearch" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/txtTest2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="特殊按钮-发送"
+                    android:imeOptions="actionSend" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/txtTest3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="特殊按钮-下一个"
+                    android:imeOptions="actionNext" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/txtTest4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="特殊按钮-完成"
+                    android:imeOptions="actionDone" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/txtTest5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="特殊按钮-未指定"
+                    android:imeOptions="actionUnspecified" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/monitor_text0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:id="@+id/monitor_text1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:id="@+id/monitor_text2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip" />
+
+                <EditText
+                    android:id="@+id/monitor_edit_text0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="监听软键盘按键的输入状态" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

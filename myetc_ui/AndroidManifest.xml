@@ -1,0 +1,207 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myetc_ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.myetc_ui.main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- main____start -->
+        <activity
+            android:name="com.myetc_ui.main.ChildActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- main____end -->
+
+
+        <!-- component____start -->
+        <activity
+            android:name="com.myetc_ui.main.componentchild.ButtonActivity_u$ButtonActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.LabelActivity_u$LabelActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.DialogActivity_u$DialogActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.EditTextActivity_u$EditTextActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.ListViewActivity_u$ListViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.ListViewActivity_u$SimpleList"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.ListViewActivity_u$TitleList"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.ListViewActivity_u$IconList"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.ListViewActivity_u$ColorList"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.ListViewActivity_u$ProgressBarActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.RadioButtonActivity_u$RadioButtonActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.CheckBoxActivity_u$CheckBoxActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.SpinnerActivity_u$SpinnerActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.componentchild.ProActivity_u$ProActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.myetc_ui.main.componentchild.RatingBarActivity_u$RatingBarActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.myetc_ui.main.componentchild.ImageViewActivity_u$ImageViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.myetc_ui.main.componentchild.GalleryActivity_u$GalleryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.myetc_ui.main.componentchild.GalleryActivity_u$Gallery3D"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.myetc_ui.main.componentchild.ImageSwitcherlActivity_u$ImageSwitcherlActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.myetc_ui.main.componentchild.TextSwitcherlActivity_u$TextSwitcherlActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.myetc_ui.main.componentchild.WebViewActivity_u$WebViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.myetc_ui.main.componentchild.WebViewActivity_u$WebViewActivity1"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.myetc_ui.main.componentchild.WebViewActivity_u$WebViewActivity2"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- component____end -->
+        <!-- othercomponent____start -->
+
+   <activity
+            android:name="com.myetc_ui.main.othercomponentchild.AnalogClockActivity_u$AnalogClockActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+   <activity
+            android:name="com.myetc_ui.main.othercomponentchild.CheckedTextViewActivity_u$CheckedTextViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+   <activity
+            android:name="com.myetc_ui.main.othercomponentchild.AutoCompleteTextViewActivity_u$AutoCompleteTextViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+   <activity
+            android:name="com.myetc_ui.main.othercomponentchild.ZoomActivity_u$ZoomActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+   <activity
+            android:name="com.myetc_ui.main.othercomponentchild.ChronometerActivity_u$ChronometerActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+   <activity
+            android:name="com.myetc_ui.main.othercomponentchild.DataPickerActivity_u$DataPickerActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+   <activity
+            android:name="com.myetc_ui.main.othercomponentchild.ExpandableListViewActivity_u$ExpandableListViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+  		<!-- othercomponent____end -->
+
+        <!-- demo____start -->
+        <activity
+            android:name="com.myetc_ui.main.demochild.ListViewPerformaceActivity_u$ListViewPerformaceActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+   <activity
+            android:name="com.myetc_ui.main.demochild.ImageActivity_u$ImageActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <!-- demo____end -->
+
+
+        <!-- interface____start -->
+        <activity
+            android:name="com.myetc_ui.main.interfacechild.LoginLayoutActivity_u$LoginLayoutActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.myetc_ui.main.interfacechild.TabLayoutActivity_u$TabLayoutActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- interface____end -->
+
+
+        <!-- include___start -->
+
+        <activity
+            android:name="com.demo.cache.main.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.demo.image.main.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.demo.image.main.ChangeActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.demo.image.main.AlphaActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- include____end -->
+    </application>
+
+</manifest>

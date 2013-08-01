@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/scrolllayout_bg"
+    android:orientation="vertical" >
+
+    <!-- 这个组件的高是无用的，被权重所替代 -->
+
+    <com.demo.scrolllayut.main.ScrollLayout
+        android:id="@+id/demo_scrolllayout_main_sl1"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1" >
+
+        <include layout="@layout/demo_scrolllayout_main_layout1" />
+
+        <include layout="@layout/demo_scrolllayout_main_layout2" />
+
+        <include layout="@layout/demo_scrolllayout_main_layout3" />
+
+        <include layout="@layout/demo_scrolllayout_main_layout4" />
+
+        <include layout="@layout/demo_scrolllayout_main_layout5" />
+    </com.demo.scrolllayut.main.ScrollLayout>
+
+    <RadioGroup
+        android:id="@+id/demo_scrolllayout_main_rg1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/demo_scrolllayout_main_rb0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="生门"
+            android:gravity="center_horizontal|center_vertical"
+            android:checked="true"
+            android:background="@drawable/radiobutton"
+             />
+
+           <RadioButton
+            android:id="@+id/demo_scrolllayout_main_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="死门"
+            android:gravity="center_horizontal|center_vertical"
+            
+            android:background="@drawable/radiobutton"
+             />
+               <RadioButton
+            android:id="@+id/demo_scrolllayout_main_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="震天"
+            android:gravity="center_horizontal|center_vertical"
+            
+            android:background="@drawable/radiobutton"
+             />
+                   <RadioButton
+            android:id="@+id/demo_scrolllayout_main_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="乾坤"
+            android:gravity="center_horizontal|center_vertical"
+            
+            android:background="@drawable/radiobutton"
+             />
+                       <RadioButton
+            android:id="@+id/demo_scrolllayout_main_rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="太极"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/radiobutton"
+             />
+    </RadioGroup>
+
+</LinearLayout>

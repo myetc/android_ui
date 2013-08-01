@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="代码填充数据" />
+
+            <!--completionThreshold设置，输入几个开始补  -->
+            <AutoCompleteTextView
+                android:id="@+id/main_othercomponent_autocompletetextview_actv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:completionThreshold="1"
+                android:hint="请输入任意[字母]测试" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="自定义/你可以去美化它，改变它|关于输入拼音出汉字的，用这个也是可以的。" />
+            <AutoCompleteTextView
+                android:id="@+id/main_othercomponent_autocompletetextview_actv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:completionThreshold="1"
+                android:hint="请输入[任意]测试" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

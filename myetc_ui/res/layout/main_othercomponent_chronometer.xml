@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="基本的" />
+
+            <Chronometer
+                android:id="@+id/main_othercomponent_chronometer_chronometer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/magenta"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_othercomponent_chronometer_button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="开始" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="由于自带的组件，没有显示毫秒的功能，有两种简单的办法，可以实现，一是重写chronometer组件，第二种就是模拟。下面用模拟实现，简单易懂" />
+
+            <TextView
+                android:id="@+id/main_othercomponent_chronometer_textview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00:00:00"
+                android:textColor="@color/maroon"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <!-- android:layout_weight="1" 权重，平分三国。不解释，在布局示例中有说明 -->
+
+                <Button
+                    android:id="@+id/main_othercomponent_chronometer_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="开始" />
+
+                <Button
+                    android:id="@+id/main_othercomponent_chronometer_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="暂停" />
+
+                <Button
+                    android:id="@+id/main_othercomponent_chronometer_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="重置" />
+            </LinearLayout>
+                   <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="用chronometer写个定时器，10S后，执行" />
+
+            <Chronometer
+                android:id="@+id/main_othercomponent_chronometer_chronometer2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/magenta"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_othercomponent_chronometer_button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="开始" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

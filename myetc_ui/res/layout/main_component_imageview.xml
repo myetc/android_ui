@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="原图(关于图片的程序创建，写到demo中去了。)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="压缩之后的" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="按比例拉伸图片，拉伸后图片的高度为View的高度 左中右显示" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/black"
+                    android:baselineAlignBottom="false"
+                    android:cropToPadding="false"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/img" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/black"
+                    android:baselineAlignBottom="false"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/black"
+                    android:baselineAlignBottom="false"
+                    android:cropToPadding="false"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/img" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="拉伸图片（不按比例）以填充View的宽高  /用矩阵来绘图" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/black"
+                    android:baselineAlignBottom="false"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:scaleType="matrix"
+                    android:src="@drawable/img" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="按原图大小显示图片，但图片宽高大于View的宽高时，截图图片中间部分显示/
+                按比例放大原图直至等于某边View的宽高显示。/
+                当原图宽高或等于View的宽高时，按原图大小居中显示；反之将原图缩放至View的宽高居中显示" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/black"
+                    android:baselineAlignBottom="false"
+                    android:cropToPadding="false"
+                    android:scaleType="center"
+                    android:src="@drawable/img" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/black"
+                    android:baselineAlignBottom="false"
+                    android:cropToPadding="false"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/black"
+                    android:baselineAlignBottom="false"
+                    android:cropToPadding="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img" />
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="把图片渲染成指定染色" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+   				 <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:tint="@color/holo_blue_bright"
+                    android:src="@drawable/img" 
+                    />
+            </LinearLayout>
+           
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="最基本的用法"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="HTML格式显示"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="添加外部字体"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="字体库太大！无演示，代码存在！" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="是否当文本为URL链接/email/电话号码/map时"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="phone"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="联系我：15818594215"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:background="#00FF00"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="百度首页：http://www.baidu.com "
+                    android:textColor="#FF0000"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email"
+                    android:background="#FFFF00"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="给我邮件：owqdmjep@163.com"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="文字位置图片"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawableBottom="@drawable/icon"
+                    android:text="在图片下方"
+                    android:textColor="#FF0000" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawableTop="@drawable/icon"
+                    android:text="在图片上方"
+                    android:textColor="#FF0000" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/icon"
+                    android:text="在图片左边"
+                    android:textColor="#FF0000" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/icon"
+                    android:text="在图片右边"
+                    android:textColor="#FF0000" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="可以在textView中设置我们想要的任何效果"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00FF00"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="文本内容"
+                    android:textColor="#000000"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="设置字符串显示为*"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:password="true"
+                    android:text="设置字符串显示为*"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF0000"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="3.0"
+                    android:text="设置字符串阴影颜色"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:singleLine="true"
+                    android:text="只显示一行字符串超出屏幕为&apos;...&apos;dsfusdiofjdsiofjsdiofjoisdjfiosdjfoisdjfoisdf"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF0000"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="设置显示文字的间隔为0.5"
+                    android:textColor="#FFFFFF"
+                    android:textScaleX="0.5"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF0000"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="设置显示文字的间隔为2.0"
+                    android:textColor="#FFFFFF"
+                    android:textScaleX="2.0"
+                    android:textSize="18dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="设置文字外形为 bold"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="设置文字外形为 normal"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="设置文字外形为 italic"
+                    android:textColor="#FF0000"
+                    android:textSize="18dip"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="设置文字大小   为10"
+                    android:textColor="#FF0000"
+                    android:textSize="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="设置文字大小   为15"
+                    android:textColor="#FF0000"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="设置文字大小   为20"
+                    android:textColor="#FF0000"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:background="#FF0000"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:text="文字滚屏文字跑马灯效果加长加长加长加长加长加长加长加长加长加长加长加长"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dip" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/main_component_webview_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="webview1"
+                android:text="最基本的，直接调用URL" />
+
+            <Button
+                android:id="@+id/main_component_webview_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="webview2"
+                android:text="调用本地html，并在网页在调用java的方法" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="突然写不下去了，因为，发现这个组件的功能太多了。" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一次听说这个组件，集成？另类？等等。习惯了xml的组件之间的布局，原来把布局看成
+                Activity来写。也是一种思路       
+               	 类CheckedTextView继承超类TextView并实现Checkable接口 。
+               	 当ListView的setChoiceMode方法并设定为
+                CHOICE_MODE_SINGLE或者CHOICE_MODE_MULTIPLE，
+               	 而非CHOICE_MODE_NONE时，使用此类是很有用的" />
+       <ListView
+    android:id="@+id/listView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />     
+            <CheckedTextView
+    android:id="@+id/checkedTextView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:text="TextView多选框11"
+    />
+    <CheckedTextView
+    android:id="@+id/checkedTextView2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:text="TextView多选框12"
+    />
+   
+    <CheckedTextView
+    android:id="@+id/checkedTextView3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:text="TextView多选框13"
+    />
+    <CheckedTextView
+    android:id="@+id/checkedTextView4"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:text="TextView多选框14"
+/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

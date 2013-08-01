@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+   
+    >
+
+
+
+           <com.myetc_ui.view.MyGallery3DGallery
+                android:id="@+id/main_component_gallery_gallery_3d_gallery1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                 android:background="@color/blanchedalmond"/> 
+</LinearLayout>

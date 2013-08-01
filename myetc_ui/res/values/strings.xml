@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- 项目 -->
+    <string name="app_name">安卓常用</string>
+    <!-- 主菜单/子级标题 -->
+    <string-array name="menu_main">
+        <item>安卓常用组件</item>
+        <item>安卓常用界面</item>
+    </string-array>
+
+    <string name="menu_component">安卓常用组件</string>
+    <string name="menu_othercomponent">安卓不常用组件</string>
+    <string name="menu_interface">安卓常用界面(待完善)</string>
+    <string name="menu_authority">安卓常用权限(待完善)</string>
+    <string name="menu_sdk">安卓常用SDK(待完善)</string>
+    <string name="menu_demo">安卓常用DEMO</string>
+    <string name="menu_data">安卓常用资料(待完善)</string>
+    <!-- 常用组件 -->
+    <string name="component_button">按钮/Button</string>
+    <string name="component_label">标签/显示信息/TextView(Lable)</string>
+    <string name="component_dialog">对话框/dialog</string>
+    <string name="component_edittext">输入框/EditText</string>
+    <string name="component_listview">列表 /ListView</string>
+    <string name="component_radiobutton">单选按钮/RadioButton</string>
+    <string name="component_checkbox">多选按钮/CheckBox</string>
+    <string name="component_spinner">下拉框/Spinner</string>
+    <string name="component_pro">进度条/ProgressBar</string>
+    <string name="component_ratingbar">评分按钮/进度/RatingBar</string>
+    <string name="component_imageview">图片/ImageView </string>
+    <string name="component_gallery">图片容器/Gallery</string>
+    <string name="component_imageswitcher">图片选择器/ImageSwitcher </string>
+    <string name="component_textswitcher">文本选择器/TextSwitcher </string>
+    <string name="component_webview">浏览器视图/WebView </string>
+    <string name="component_on">状态切换/开关</string>
+    <string name="component_menu">菜单</string>
+    <!-- 不常用组件 -->
+    <string name="othercomponent_analogclock">时钟/AnalogClock/DigitalClock</string>
+    <string name="othercomponent_checkedtextview">可选择标签/CheckedTextView</string>
+    <string name="othercomponent_autocompletetextview">自动补全输入框/AutoCompleteTextView</string>
+    <string name="othercomponent_zoom">缩放/Zoom </string>
+    <string name="othercomponent_chronometer">定时器/Chronometer</string>
+    <string name="othercomponent_datepicker">日期选择/DatePicker</string>
+    <string name="othercomponent_expandablelistview">多级列表/ExpandableListView </string>
+
+    <!-- 常用界面 -->
+    <string name="interface_loginlayout">登录布局</string>
+    <string name="interface_tablayout">选项卡布局</string>
+    <string name="interface_lefbarlayout">左侧导航</string>
+
+    <!-- 常用demo -->
+    <string name="demo_listviewperformace">ListView异步加载网络图片完美版之双缓存技术</string>
+    <string name="demo_image">关于ImageView的功能运用</string>
+    <!-- 小功能 -->
+    <string name="bar_back">上一步</string>
+    <string name="spinner_title">请选择</string>
+    <!-- 信息提示 -->
+    <string name="errorselect">不正确的选择</string>
+
+    <!-- 导航标题 -->
+    <string name="bar_title_navInterface">被引用的导航|很长很长很长</string>
+
+    <string-array name="spinner_source1">
+        <item>中国</item>
+        <item>外国</item>
+        <item>美国</item>
+        <item>日本</item>
+        <item>加拿大</item>
+        <item>韩国</item>
+        <item>中华人民共和国</item>
+    </string-array>
+
+</resources>

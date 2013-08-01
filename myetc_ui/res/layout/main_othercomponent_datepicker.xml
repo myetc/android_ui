@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="基本的" />
+
+            <DatePicker
+                android:id="@+id/main_othercomponent_datepicker_dp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/main_othercomponent_datepicker_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TimePicker
+                android:id="@+id/main_othercomponent_datepicker_tp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/main_othercomponent_datepicker_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            
+        </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

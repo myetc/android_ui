@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tool_layout_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自己定义的" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <ZoomButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zoom_max" />
+
+                <ZoomButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zoom_min" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自己定义的组件，调用系统图片资源，太简单了，就不写事件了" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <ZoomButton
+                    android:id="@+id/main_othercomponent_zoom_btn_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_plus" />
+
+                <ZoomButton
+                    android:id="@+id/main_othercomponent_zoom_btn_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_minus" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统带的放大缩小组" />
+
+            <ZoomControls
+                android:id="@+id/main_othercomponent_zoom_zoomControls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击图片，看效果" />
+
+            <RelativeLayout
+                android:id="@+id/main_othercomponent_zoom_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/main_othercomponent_zoom_textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="说明上面的状" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
